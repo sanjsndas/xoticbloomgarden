@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xotic Bloom Garden | Premium Gardening</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #023b6d;
+    }
+
+    /* Blue Theme */
+    header {
+      background: linear-gradient(135deg, #0a4c7a, #0277bd);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #b9f6ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #b9f6ff;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(2, 59, 109, 0.8), rgba(2, 119, 189, 0.7)), url('https://images.pexels.com/photos/4503276/flowers-garden-nature-bloom-4503276.jpg?auto=compress&cs=tinysrgb&w=1600');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffb74d;
+      color: #023b6d;
+      padding: 12px 28px;
+      margin-top: 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffa000;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #0277bd;
+      font-size: 2rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 1rem 1rem 0;
+      color: #0a4c7a;
+    }
+
+    .card p {
+      padding: 0.5rem 1rem 1rem;
+      color: #2c3e50;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #023b6d;
+      color: #e1f5fe;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .footer-content p {
+      margin: 0.5rem 0;
+    }
+
+    .footer-content a {
+      color: #b9f6ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Xotic <span>Bloom Garden</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Transform Your Garden Into Paradise</h1>
+      <p>Expert gardening advice, premium plants, and landscape design — all with a touch of blue serenity.</p>
+      <a href="#" class="btn">Explore Garden Ideas</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>🌿 Popular Gardening Guides</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1072824/flowers-garden-nature-bloom-1072824.jpg?auto=compress&cs=tinysrgb&w=600" alt="Flower gardening">
+          <h3>Flower Gardening 101</h3>
+          <p>Learn to grow roses, marigolds, and petunias. Seasonal care, soil prep, and watering tips.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1266380/vegetables-garden-vegetable-garden-farming-1266380.jpg?auto=compress&cs=tinysrgb&w=600" alt="Vegetable garden">
+          <h3>Organic Vegetable Garden</h3>
+          <p>Grow tomatoes, peppers, and herbs naturally. No chemicals, just pure harvest.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/210165/pexels-photo-210165.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Indoor plants">
+          <h3>Indoor Jungle Guide</h3>
+          <p>Monstera, snake plant, pothos care. Perfect for apartments and low light.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #e3f2fd;">
+    <div class="container">
+      <h2>📸 Xotic Bloom Garden Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blue garden flowers">
+        <img src="https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hydrangea blue">
+        <img src="https://images.pexels.com/photos/139829/sunflower-sun-summer-yellow-139829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sunflower field">
+        <img src="https://images.pexels.com/photos/1438395/plants-green-nature-garden-1438395.jpg?auto=compress&cs=tinysrgb&w=600" alt="Lush garden">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>💧 Gardening Tips & Tricks</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>💙 Blue Hydrangea Care</h3>
+          <p>Acidic soil gives you blue blooms. Add coffee grounds or aluminum sulfate.</p>
+        </div>
+        <div class="card">
+          <h3>🌱 Composting Basics</h3>
+          <p>Turn kitchen waste into black gold. Ratios, bins, and troubleshooting.</p>
+        </div>
+        <div class="card">
+          <h3>🐞 Natural Pest Control</h3>
+          <p>Neem oil, ladybugs, and companion planting to keep pests away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p><strong>Xotic Bloom Garden</strong> — Where Nature Meets Elegance</p>
+      <p>📍 123 Green Valley Road, Botanical Heights, NY 10001</p>
+      <p>📞 <a href="tel:+1234567890">+1 (234) 567-890</a> | ✉️ hello@xoticbloomgarden.com</p>
+      <p>© 2025 Xotic Bloom Garden | All images for inspirational purposes</p>
+    </div>
+  </footer>
+</body>
+</html>

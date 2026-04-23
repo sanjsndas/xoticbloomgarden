@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Cookies Policy | Xotic Bloom Garden</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #023b6d;
+    }
+
+    /* Blue Theme (consistent with homepage & contact) */
+    header {
+      background: linear-gradient(135deg, #0a4c7a, #0277bd);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #b9f6ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #b9f6ff;
+    }
+
+    /* hero section for policy pages */
+    .page-hero {
+      background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+      padding: 2.5rem 0;
+      text-align: center;
+      border-bottom: 1px solid #cde5f0;
+    }
+
+    .page-hero h1 {
+      font-size: 2.5rem;
+      color: #01579b;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #0277bd;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* policy content styling */
+    .policy-content {
+      background: white;
+      border-radius: 32px;
+      padding: 2.5rem;
+      margin: 3rem 0;
+      box-shadow: 0 12px 28px rgba(2, 59, 109, 0.08);
+    }
+
+    .policy-content h2 {
+      font-size: 1.8rem;
+      color: #0a4c7a;
+      margin: 1.8rem 0 1rem 0;
+      border-left: 5px solid #ffb74d;
+      padding-left: 1rem;
+    }
+
+    .policy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .policy-content h3 {
+      font-size: 1.3rem;
+      color: #0277bd;
+      margin: 1.5rem 0 0.8rem 0;
+    }
+
+    .policy-content p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    .policy-content ul, .policy-content ol {
+      margin: 1rem 0 1rem 2rem;
+      line-height: 1.6;
+      color: #2c3e50;
+    }
+
+    .policy-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .policy-content a {
+      color: #0277bd;
+      text-decoration: none;
+      border-bottom: 1px dotted #8bc9ff;
+    }
+
+    .policy-content a:hover {
+      color: #ffb74d;
+      border-bottom-color: #ffb74d;
+    }
+
+    .effective-date {
+      background: #eef5fc;
+      padding: 0.8rem 1.2rem;
+      border-radius: 40px;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #01579b;
+    }
+
+    .cookie-badge {
+      background: #fef7e0;
+      border-left: 4px solid #ffb74d;
+      padding: 1rem 1.5rem;
+      border-radius: 20px;
+      margin: 1.5rem 0;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #cde5f0, transparent);
+    }
+
+    /* cookie consent simulation hint (informational only) */
+    .consent-note {
+      background: #e8f0fe;
+      border-radius: 20px;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0 0;
+      font-size: 0.9rem;
+      border: 1px solid #cde5f0;
+    }
+
+    /* footer */
+    footer {
+      background: #023b6d;
+      color: #e1f5fe;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .footer-content p {
+      margin: 0.5rem 0;
+    }
+
+    .footer-content a {
+      color: #b9f6ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 880px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+      .policy-content {
+        padding: 1.5rem;
+      }
+      .policy-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Xotic <span>Bloom Garden</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>🍪 Cookies Policy</h1>
+      <p>We use cookies to cultivate a better browsing experience — transparent, simple, and respectful of your privacy.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="policy-content">
+      <div class="effective-date">📅 Effective Date: April 21, 2025 | Last Updated: April 21, 2025</div>
+      
+      <p>At Xotic Bloom Garden ("we," "us," or "our"), we believe in clarity and honesty about how we use cookies and similar tracking technologies. This Cookies Policy explains what cookies are, how we use them on our website (xoticbloomgarden.com), and how you can manage your cookie preferences. By continuing to use our site, you agree to our use of cookies as described in this policy, unless you have set your browser to refuse them.</p>
+
+      <h2>1. What Are Cookies?</h2>
+      <p>Cookies are small text files that are placed on your device (computer, smartphone, tablet) when you visit a website. They are widely used to make websites work more efficiently, provide a smoother user experience, and give website owners valuable information about how visitors interact with their site. Cookies may be "persistent" (remain on your device until you delete them or they expire) or "session" (deleted automatically when you close your browser).</p>
+      <p>We also use similar technologies such as web beacons, pixels, and local storage to collect information that helps us improve our services. Throughout this policy, any reference to "cookies" includes these similar technologies.</p>
+
+      <div class="cookie-badge">
+        <strong>🌿 Our Commitment:</strong> We never use cookies to collect sensitive personal data without your explicit consent, and we never sell cookie-derived data to third parties.
+      </div>
+
+      <h2>2. Types of Cookies We Use</h2>
+      <p>To offer you the best experience on Xotic Bloom Garden, we categorize cookies into four main types. You can manage your preferences for non-essential cookies via our cookie consent tool (available on your first visit) or through your browser settings.</p>
+      
+      <h3>🔹 Strictly Necessary Cookies</h3>
+      <p>These cookies are essential for the website to function properly. They enable core features such as secure login, shopping cart functionality, and load balancing. You cannot disable these cookies without affecting the performance of our services. They do not gather information for marketing purposes.</p>
+      <ul>
+        <li><strong>Examples:</strong> Session identifiers, CSRF tokens, checkout state management.</li>
+        <li><strong>Duration:</strong> Usually session-based or short-term persistent.</li>
+      </ul>
+
+      <h3>🔹 Performance & Analytics Cookies</h3>
+      <p>These cookies help us understand how visitors interact with our website by collecting anonymous information about page visits, time spent on site, and any errors encountered. This data allows us to improve our site’s structure, content, and overall performance. We use first-party analytics tools and may also use services like Google Analytics (privacy-friendly, IP anonymization enabled).</p>
+      <ul>
+        <li><strong>Examples:</strong> _ga, _gid (Google Analytics), custom event counters.</li>
+        <li><strong>Consent required:</strong> Yes, we ask for your permission before placing these cookies.</li>
+      </ul>
+
+      <h3>🔹 Functional Cookies</h3>
+      <p>Functional cookies remember your preferences and choices to provide enhanced, personalized features. For instance, they can remember your preferred language, region, or past interactions such as live chat history or font size settings. These cookies improve convenience but are not strictly necessary.</p>
+      <ul>
+        <li><strong>Examples:</strong> Language selection, "Remember Me" on contact forms, session customizations.</li>
+        <li><strong>Consent required:</strong> Yes, we seek your approval (unless the feature is explicitly requested by you).</li>
+      </ul>
+
+      <h3>🔹 Targeting / Advertising Cookies</h3>
+      <p>Xotic Bloom Garden does NOT engage in behavioral advertising or third-party ad networks that track you across websites. However, we may use limited advertising cookies if we later run promotional campaigns (e.g., remarketing via social platforms). In such cases, we will obtain your explicit consent before enabling them. Currently, we do not serve any third-party ad cookies. If our policy changes, we will update this page and notify you.</p>
+      <ul>
+        <li><strong>Current status:</strong> No advertising cookies are active without prior opt-in.</li>
+        <li><strong>Future notice:</strong> You will always be informed and given control.</li>
+      </ul>
+
+      <h2>3. First-Party vs. Third-Party Cookies</h2>
+      <p>Most cookies on our site are <strong>first-party cookies</strong>, meaning they are set and controlled by Xotic Bloom Garden directly. Third-party cookies may be set by external services we integrate (such as analytics providers, payment gateways, or support chat). These third parties have their own privacy policies, but we ensure they comply with data protection regulations and use cookies only for the purposes we specify.</p>
+      <p>Examples of third-party services we use and their cookie practices:</p>
+      <ul>
+        <li><strong>Stripe / PayPal:</strong> For payment processing – they may set necessary cookies for fraud prevention and transaction security.</li>
+        <li><strong>Google Analytics:</strong> Provides anonymized analytics data (we have enabled IP anonymization).</li>
+        <li><strong>Live chat widget (if applicable):</strong> Functional cookies to remember chat session continuity.</li>
+      </ul>
+      <p>We do not allow third parties to use cookies for cross-site tracking or unrelated advertising.</p>
+
+      <h2>4. How to Manage & Delete Cookies</h2>
+      <p>You have full control over cookies. You can adjust your browser settings to block or delete cookies at any time. However, please note that disabling strictly necessary cookies may prevent some parts of our website from functioning correctly (e.g., ordering plants or accessing secure forms).</p>
+      <p><strong>Below are links to cookie management instructions for popular browsers:</strong></p>
+      <ul>
+        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+        <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+        <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" rel="noopener noreferrer">Safari</a></li>
+        <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-1b9a-1f5baf6a0dac" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+      </ul>
+      <p>Additionally, you can opt-out of Google Analytics tracking across all websites by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>. For other third-party services, we provide cookie preference tools directly on our site (cookie banner). You may also use global privacy controls such as the Global Privacy Control (GPC) signal, which we honor as a request to opt out of non-essential cookies.</p>
+
+      <h2>5. Cookie Duration & Retention</h2>
+      <p>We use both session cookies (expire when you close your browser) and persistent cookies (remain for a defined period, usually up to 12 months, unless you delete them earlier). The retention period for analytics cookies is limited to what is necessary to analyze trends and improve our services. You can delete all cookies stored on your device via browser settings at any time.</p>
+
+      <h2>6. Consent Management & Your Choices</h2>
+      <p>When you first visit Xotic Bloom Garden, a cookie banner will appear asking for your consent to set non-essential cookies (performance, functional, and targeting). You can:</p>
+      <ul>
+        <li>✅ Accept all non-essential cookies.</li>
+        <li>❌ Reject all non-essential cookies (only strictly necessary cookies will be active).</li>
+        <li>⚙️ Customize your preferences per category using our cookie settings panel (accessible via the "Cookie Preferences" link in the footer or via the floating icon).</li>
+      </ul>
+      <p>You can change your preferences at any time. Withdrawing consent will not affect the lawfulness of processing based on consent before its withdrawal.</p>
+      <p><strong>Important note for EU/UK/California residents:</strong> Our cookie practices comply with the ePrivacy Directive, GDPR, and CCPA regulations. We do not sell your personal information through cookies.</p>
+
+      <h2>7. Updates to This Cookies Policy</h2>
+      <p>We may revise this Cookies Policy occasionally to reflect changes in technology, legal requirements, or our operations. The "Effective Date" at the top of this page indicates when the latest version was published. We will notify you of material changes via a website notice or email (if applicable). We encourage you to review this policy periodically to stay informed about our use of cookies.</p>
+
+      <h2>8. Need More Information?</h2>
+      <p>If you have any questions regarding our use of cookies or your privacy rights, please feel free to contact our Data Protection team. We're happy to provide further clarification about specific cookies or help you exercise your preferences.</p>
+      <ul>
+        <li>📧 Email: <a href="mailto:privacy@xoticbloomgarden.com">privacy@xoticbloomgarden.com</a></li>
+        <li>📞 Phone: <a href="tel:+1234567890">+1 (234) 567-890</a> (ask for Privacy Team)</li>
+        <li>📍 Postal Address: Xotic Bloom Garden, Attn: Privacy & Cookies, 123 Green Valley Road, Botanical Heights, NY 10001, USA</li>
+      </ul>
+      
+      <div class="consent-note">
+        <strong>🍪 Quick reminder:</strong> By using our website, you acknowledge that you have read and understood this Cookies Policy. You can manage your cookie choices anytime through your browser settings or our cookie preference center. For seamless gardening inspiration, we recommend allowing functional and analytics cookies — but the choice is always yours.
+      </div>
+
+      <hr />
+      <p style="font-size: 0.85rem; text-align: center; color: #4c6a7e;">This Cookies Policy is part of our commitment to transparency at Xotic Bloom Garden. It works in conjunction with our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <p><strong>Xotic Bloom Garden</strong> — Where Nature Meets Elegance</p>
+      <p>📍 123 Green Valley Road, Botanical Heights, NY 10001</p>
+      <p>📞 <a href="tel:+1234567890">+1 (234) 567-890</a> | ✉️ hello@xoticbloomgarden.com</p>
+      <p>© 2025 Xotic Bloom Garden | Cultivating trust & transparency</p>
+      <p><a href="cookies.html">Cookie Preferences</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>

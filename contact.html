@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Xotic Bloom Garden</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f7ff;
+      color: #023b6d;
+      line-height: 1.5;
+    }
+
+    /* Blue Theme (consistent with main site) */
+    header {
+      background: linear-gradient(135deg, #0a4c7a, #0277bd);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #b9f6ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #b9f6ff;
+    }
+
+    /* Hero about section */
+    .about-hero {
+      background: linear-gradient(135deg, #023b6d, #0277bd);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .about-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    /* Story + mission sections */
+    .story-section {
+      padding: 4rem 0;
+      background: white;
+    }
+
+    .two-columns {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .col-text {
+      flex: 1;
+    }
+
+    .col-text h2 {
+      color: #0277bd;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .col-text p {
+      margin-bottom: 1.2rem;
+      color: #1e4663;
+      font-size: 1.05rem;
+    }
+
+    .col-img {
+      flex: 1;
+    }
+
+    .col-img img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .col-img img:hover {
+      transform: scale(1.02);
+    }
+
+    .mission-box {
+      background: #e3f2fd;
+      border-radius: 32px;
+      padding: 2.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .mission-box h3 {
+      font-size: 1.8rem;
+      color: #0a4c7a;
+      margin-bottom: 1rem;
+    }
+
+    .mission-box p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    /* Team section */
+    .team-section {
+      padding: 4rem 0;
+      background: #f0f7ff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      color: #0277bd;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .team-card h3 {
+      margin-top: 1rem;
+      color: #0a4c7a;
+    }
+
+    .team-card p {
+      color: #2c5a7a;
+      padding: 0 1rem;
+      font-style: italic;
+    }
+
+    .team-role {
+      font-weight: bold;
+      color: #0277bd;
+      margin: 0.5rem 0;
+    }
+
+    /* Values */
+    .values-section {
+      padding: 4rem 0;
+      background: white;
+    }
+
+    .values-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .value-item {
+      background: #e3f2fd;
+      border-radius: 36px;
+      padding: 1.8rem;
+      text-align: center;
+      width: 220px;
+      transition: 0.2s;
+    }
+
+    .value-item:hover {
+      background: #cfe6fc;
+    }
+
+    .value-icon {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .value-item h4 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #023b6d;
+    }
+
+    /* footer */
+    footer {
+      background: #023b6d;
+      color: #e1f5fe;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .footer-content p {
+      margin: 0.5rem 0;
+    }
+
+    .footer-content a {
+      color: #b9f6ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      .about-hero h1 {
+        font-size: 2rem;
+      }
+      .two-columns {
+        flex-direction: column;
+      }
+      .col-text, .col-img {
+        flex: auto;
+      }
+      .team-card img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Xotic <span>Bloom Garden</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About hero section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Our Story — Rooted in Passion</h1>
+      <p>For over a decade, Xotic Bloom Garden has been cultivating beauty, sustainability, and joy — one seed at a time.</p>
+    </div>
+  </section>
+
+  <!-- Main story + image -->
+  <section class="story-section">
+    <div class="container">
+      <div class="two-columns">
+        <div class="col-text">
+          <h2>🌼 From a Tiny Seed to a Blooming Community</h2>
+          <p>Founded in 2013 by passionate horticulturist Elara Mitchell, Xotic Bloom Garden started as a small urban nursery with a big dream: reconnect people with nature through mindful gardening. What began as a backyard project soon grew into a trusted resource for premium plants, sustainable landscaping, and expert advice.</p>
+          <p>Today, we are a collective of gardeners, designers, and nature lovers dedicated to helping you create your own oasis — whether it's a balcony herb garden or a sprawling flower paradise. Our philosophy is simple: gardening should be therapeutic, accessible, and kind to the Earth.</p>
+          <p>Every plant we nurture, every guide we write, and every design we craft carries our signature "blue serenity" — a calm, thoughtful approach that prioritizes ecological balance and lasting beauty.</p>
+        </div>
+        <div class="col-img">
+          <img src="https://images.pexels.com/photos/1231190/flowers-garden-nature-bloom-1231190.jpg?auto=compress&cs=tinysrgb&w=800" alt="Founder tending garden">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission statement -->
+  <div class="container">
+    <div class="mission-box">
+      <h3>💙 Our Mission</h3>
+      <p>To inspire and empower gardeners of all levels with honest guidance, exceptional plants, and eco-friendly solutions — because every green space, no matter the size, can bring peace and vitality to our world.</p>
+    </div>
+  </div>
+
+  <!-- Meet the team -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title">🌿 Meet the Green Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="https://images.pexels.com/photos/3756681/young-woman-with-afro-hair-standing-in-nature-3756681.jpg?auto=compress&cs=tinysrgb&w=600" alt="Elara Mitchell">
+          <h3>Elara Mitchell</h3>
+          <div class="team-role">Founder & Head Botanist</div>
+          <p>"Gardening taught me patience — and every leaf tells a story."</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.pexels.com/photos/5469081/portrait-of-man-in-brown-sweater-5469081.jpg?auto=compress&cs=tinysrgb&w=600" alt="Julian Rivers">
+          <h3>Julian Rivers</h3>
+          <div class="team-role">Landscape Designer</div>
+          <p>"Blending architecture with nature, one blue hydrangea at a time."</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.pexels.com/photos/5928113/young-woman-in-yellow-sweater-smiling-5928113.jpg?auto=compress&cs=tinysrgb&w=600" alt="Maya Chen">
+          <h3>Maya Chen</h3>
+          <div class="team-role">Organic Gardening Expert</div>
+          <p>"Healthy soil = healthy planet. Compost is magic."</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.pexels.com/photos/4246196/african-american-man-in-apron-holding-small-potted-plant-4246196.jpg?auto=compress&cs=tinysrgb&w=600" alt="David Okafor">
+          <h3>David Okafor</h3>
+          <div class="team-role">Community Outreach</div>
+          <p>"Bringing gardening to urban schools and rooftop farms."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core values -->
+  <section class="values-section">
+    <div class="container">
+      <h2 class="section-title">✨ Our Core Values</h2>
+      <div class="values-flex">
+        <div class="value-item">
+          <span class="value-icon">🌎</span>
+          <h4>Sustainability</h4>
+          <p>Eco-conscious practices from seed to sale.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">💙</span>
+          <h4>Serenity</h4>
+          <p>Creating calming spaces with a blue touch.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🌿</span>
+          <h4>Education</h4>
+          <p>Free workshops, guides, and honest advice.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🤝</span>
+          <h4>Community</h4>
+          <p>Local partnerships and global garden network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun fact / blooming numbers -->
+  <section style="background: #e3f2fd; padding: 3rem 0;">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; gap: 2rem;">
+        <div>
+          <h2 style="font-size: 2.5rem; color: #023b6d;">12+</h2>
+          <p style="font-weight: bold;">Years of Gardening Excellence</p>
+        </div>
+        <div>
+          <h2 style="font-size: 2.5rem; color: #023b6d;">15k+</h2>
+          <p style="font-weight: bold;">Happy Gardeners Guided</p>
+        </div>
+        <div>
+          <h2 style="font-size: 2.5rem; color: #023b6d;">280+</h2>
+          <p style="font-weight: bold;">Plant Varieties Nurtured</p>
+        </div>
+        <div>
+          <h2 style="font-size: 2.5rem; color: #023b6d;">100%</h2>
+          <p style="font-weight: bold;">Eco-friendly Commitment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action / connect -->
+  <section style="padding: 3rem 0; background: white;">
+    <div class="container" style="text-align: center;">
+      <h2 style="color: #0277bd;">Join Our Blooming Family</h2>
+      <p style="max-width: 700px; margin: 1rem auto; font-size: 1.1rem;">Whether you're a first-time plant parent or a seasoned gardener, Xotic Bloom Garden is here to help your garden flourish. Let's grow something beautiful together.</p>
+      <a href="contact.html" style="display: inline-block; background: #ffb74d; color: #023b6d; padding: 12px 32px; margin-top: 1rem; border-radius: 40px; text-decoration: none; font-weight: bold; transition: 0.3s;">📬 Get in Touch →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p><strong>Xotic Bloom Garden</strong> — Where Nature Meets Elegance</p>
+      <p>📍 123 Green Valley Road, Botanical Heights, NY 10001</p>
+      <p>📞 <a href="tel:+1234567890">+1 (234) 567-890</a> | ✉️ hello@xoticbloomgarden.com</p>
+      <p>© 2025 Xotic Bloom Garden | Cultivating serenity since 2013</p>
+    </div>
+  </footer>
+</body>
+</html>
